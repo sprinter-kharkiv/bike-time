@@ -14,7 +14,6 @@ const stylelint = require('gulp-stylelint');
 const imagemin = require('gulp-imagemin');
 const rigger = require('gulp-rigger');
 const uglify = require('gulp-uglify');
-const babel = require('gulp-babel');
 const concat    = require('gulp-concat');
 const svgSprite = require('gulp-svg-sprites');
 
@@ -33,13 +32,13 @@ const path = {
         style: ['src/sсss/**/*.scss']
     },
     build: {
-        style: 'dist/css/',
-        html: 'dist/',
-        img: 'dist/img/',
-        js: 'dist/js/',
-        fonts: 'dist/fonts/',
+        style: 'docs/css/',
+        html: 'docs/',
+        img: 'docs/img/',
+        js: 'docs/js/',
+        fonts: 'docs/fonts/',
         svgSprite: {
-            folder: 'dist/img/svg-sprites/',
+            folder: 'docs/img/svg-sprites/',
             file: '_svg-sprite.html'
         }
     },
@@ -175,9 +174,6 @@ gulp.task('svg-build', function () {
 // JAVASCRIPT
 gulp.task('javascript', function () {
   return gulp.src(path.src.js)
-      .pipe(babel({
-          presets: ['@babel/env']
-      }))
       .pipe(uglify())
       .pipe(rename({suffix: '.min', prefix: ''}))
       .pipe(gulp.dest(path.build.js))
@@ -213,7 +209,7 @@ gulp.task(
 
 const config = {
   server: {
-    baseDir: './dist'
+    baseDir: './docs'
   },
   host: 'localhost',
   port: 3000

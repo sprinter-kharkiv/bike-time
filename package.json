@@ -11,9 +11,6 @@
     "not bb < 10"
   ],
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "babel-core": "^6.26.3",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^5.0.0",
@@ -41,5 +38,6 @@
     "stylelint-z-index-value-constraint": "^1.0.0"
   },
   "author": "Alexey Zagatskiy",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
