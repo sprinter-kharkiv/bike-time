@@ -13,15 +13,28 @@
 
 </head>
 <body class="wrapper">
+
+//= img/_svg-sprite.html
+
 <nav class="white" role="navigation">
   <div class="nav-wrapper container">
-    <a id="logo-container" href="#" class="brand-logo">Logo</a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="#">Navbar Link</a></li>
+    <a id="logo-container" href="#" class="brand-logo teal-text">
+      <svg class="brand-logo__img">
+        <use xlink:href="#logo"/>
+      </svg>
+    </a>
+    <ul class="main-nav right hide-on-med-and-down">
+      <li><a class="main-nav__link" href="#chooseBike">Выбор мотоцикла</a></li>
+      <li><a class="main-nav__link" href="tel:+380973384288">
+        <span class="mr-1">097-338-42-88</span>
+        <svg width="20px" height="20px">
+          <use xlink:href="#icon_phone"/>
+        </svg>
+      </a></li>
     </ul>
 
     <ul id="nav-mobile" class="sidenav">
-      <li><a href="#">Navbar Link</a></li>
+      <li><a href="#chooseBike">Выбор мотоцикла</a></li>
     </ul>
     <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
   </div>
@@ -37,33 +50,37 @@
           <form class="card">
             <div class="card-content">
               <div class="row">
-                <span class="teal-text card-title">Card Title</span>
+                <span class="teal-text card-title">Бронирование</span>
               </div>
               <div class="row grey-text">
                 <div class="input-field col s6">
-                  <input placeholder="start day" id="dateFrom" type="text" class="datepicker validate">
-                  <label for="dateFrom" class="active">Date from:</label>
+                  <input placeholder="start day" id="dateFrom" type="text"
+                         class="datepicker validate">
+                  <label for="dateFrom" class="active">Дата начала:</label>
                 </div>
                 <div class="input-field col s6">
                   <input placeholder="end day" id="dateTo" type="text" class="datepicker validate">
-                  <label for="dateTo" class="active">Date to:</label>
+                  <label for="dateTo" class="active">Дата окончания:</label>
                 </div>
               </div>
             </div>
             <div class="card-action">
-              <button type="button" class="btn waves-effect waves-light teal lighten-1">Order</button>
+              <button type="button" class="btn waves-effect waves-light teal lighten-1">
+                Забронировать
+              </button>
             </div>
           </form>
         </div>
 
         <div class="col s12 m6">
           <br><br>
-          <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
+          <h1 class="header center teal-text text-lighten-2">Прокат мотоциклов</h1>
           <div class="row center">
-            <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+            <h5 class="header col s12 light">в Харькове</h5>
           </div>
           <div class="row center">
-            <a href="#chooseBike" class="btn-large waves-effect waves-light teal lighten-1">Select</a>
+            <a href="#chooseBike"
+               class="btn-large waves-effect waves-light teal lighten-1">Выбрать</a>
           </div>
           <br><br>
         </div>
@@ -80,34 +97,50 @@
     <div class="row">
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-          <h5 class="center">Speeds up development</h5>
+          <h2 class="center brown-text">
+            <svg class="" width="60px" height="60px">
+              <use xlink:href="#icon_ok"/>
+            </svg>
+          </h2>
+          <h5 class="center">Доступные цены</h5>
 
-          <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our
-            custom components. Additionally, we refined animations and transitions to provide a smoother experience for
-            developers.</p>
+          <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            scelerisque id nunc
+            nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras
+            ut ultricies eros.
+            Maecenas eros justo, ullamcorpe</p>
         </div>
       </div>
 
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-          <h5 class="center">User Experience Focused</h5>
+          <h2 class="center brown-text">
+            <svg class="" width="80px" height="70px">
+              <use xlink:href="#icon_helmet"/>
+            </svg>
+          </h2>
+          <h5 class="center">Безопасность</h5>
 
-          <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework
-            that incorporates components and animations that provide more feedback to users. Additionally, a single
-            underlying responsive system across all platforms allow for a more unified user experience.</p>
+          <p class="light">К мотоциклу или скутеру обязатльно выдается минимально необходимая
+            эипировка для водителя. Включает в себя шлем и защитные перчатки. Дополнительный экип и
+            экип для пассажира оговаривается дополнительно</p>
         </div>
       </div>
 
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-          <h5 class="center">Easy to work with</h5>
+          <h2 class="center brown-text">
+            <svg class="" width="60px" height="60px">
+              <use xlink:href="#icon_service"/>
+            </svg>
+          </h2>
+          <h5 class="center">Сервис</h5>
 
-          <p class="light">We have provided detailed documentation as well as specific code examples to help new users
-            get started. We are also always open to feedback and can answer any questions a user may have about
-            Materialize.</p>
+          <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            scelerisque id nunc
+            nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras
+            ut ultricies eros.
+            Maecenas eros justo, ullamcorpe</p>
         </div>
       </div>
     </div>
@@ -115,71 +148,78 @@
   </div>
 </div>
 
-<div class="valign-wrapper" id="chooseBike">
-  <div class="section no-pad-bot">
-    <div class="container">
-      <div class="row center">
-        <h4 class="header col s12 light">Choose item...</h4>
+<div class="container" id="chooseBike">
+  <div class="section">
+    <div class="row center">
+      <h4 class="header col s12 light">Доступны к выбору:</h4>
+    </div>
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/ybr.jpg">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Yamaha YBR<i
+                class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Yamaha YBR<i
+              class="material-icons right">close</i></span>
+            <ul class="brown-text mb-2">
+              <li><b>Name:</b> Name - 1</li>
+              <li><b>Size:</b> 200cc</li>
+              <li><b>Price:</b> 30$</li>
+            </ul>
+            <button type="button" class="btn-small waves-effect waves-light teal lighten-1">
+              Забронировать
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="https://materializecss.com/images/office.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Model<i
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/avanger.jpg">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Bajaj Avenger<i
                 class="material-icons right">more_vert</i></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Model<i class="material-icons right">close</i></span>
-              <ul class="brown-text mb-2">
-                <li><b>Name:</b> Name - 1</li>
-                <li><b>Size:</b> 200cc</li>
-                <li><b>Price:</b> 30$</li>
-              </ul>
-              <button type="button" class="btn-small waves-effect waves-light teal lighten-1">Order</button>
-            </div>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Bajaj Avenger<i
+              class="material-icons right">close</i></span>
+            <ul class="brown-text mb-2">
+              <li><b>Name:</b> Name - 1</li>
+              <li><b>Size:</b> 200cc</li>
+              <li><b>Price:</b> 30$</li>
+            </ul>
+            <button type="button" class="btn-small waves-effect waves-light teal lighten-1">
+              Забронировать
+            </button>
           </div>
         </div>
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="https://materializecss.com/images/office.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Model<i
-                class="material-icons right">more_vert</i></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Model<i class="material-icons right">close</i></span>
-              <ul class="brown-text mb-2">
-                <li><b>Name:</b> Name - 1</li>
-                <li><b>Size:</b> 200cc</li>
-                <li><b>Price:</b> 30$</li>
-              </ul>
-              <button type="button" class="btn-small waves-effect waves-light teal lighten-1">Order</button>
-            </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/sh.jpeg">
           </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="https://materializecss.com/images/office.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Model<i
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Honda SH<i
                 class="material-icons right">more_vert</i></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Model<i class="material-icons right">close</i></span>
-              <ul class="brown-text mb-2">
-                <li><b>Name:</b> Name - 1</li>
-                <li><b>Size:</b> 200cc</li>
-                <li><b>Price:</b> 30$</li>
-              </ul>
-              <button type="button" class="btn-small waves-effect waves-light teal lighten-1">Order</button>
-            </div>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Honda SH<i
+              class="material-icons right">close</i></span>
+            <ul class="brown-text mb-2">
+              <li><b>Name:</b> Name - 1</li>
+              <li><b>Size:</b> 200cc</li>
+              <li><b>Price:</b> 30$</li>
+            </ul>
+            <button type="button" class="btn-small waves-effect waves-light teal lighten-1">
+              Забронировать
+            </button>
           </div>
         </div>
       </div>
@@ -194,12 +234,18 @@
       <div class="col s12 center">
         <h3><i class="mdi-content-send brown-text"></i></h3>
         <h4>Contact Us</h4>
-        <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc
-          nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros.
-          Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget,
-          bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet
-          semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim
-          mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+        <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          scelerisque id nunc
+          nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut
+          ultricies eros.
+          Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque,
+          posuere et pretium eget,
+          bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus
+          sed. Nulla imperdiet
+          semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam
+          eget dignissim
+          mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et
+          ultrices posuere cubilia
           Curae;</p>
       </div>
     </div>
@@ -210,11 +256,11 @@
   <div class="section no-pad-bot">
     <div class="container">
       <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        <h5 class="header col s12 light">Прокат / аренда мотоциклов и скутеров в Харькове</h5>
       </div>
     </div>
   </div>
-  <div class="parallax"><img src="img/background3.jpg" alt="Unsplashed background img 3"></div>
+  <div class="parallax"><img src="img/bg.jpg" alt="Unsplashed background img 3"></div>
 </div>
 
 <footer class="page-footer teal">
@@ -222,35 +268,46 @@
     <div class="row">
       <div class="col l6 s12">
         <h5 class="white-text">Company Bio</h5>
-        <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full
-          time job. Any amount would help support and continue development on this project and is greatly
-          appreciated.</p>
+        <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nullam scelerisque id nunc
+          nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut
+          ultricies eros.
+          Maecenas eros justo,</p>
 
 
       </div>
       <div class="col l3 s12">
-        <h5 class="white-text">Settings</h5>
-        <ul>
-          <li><a class="white-text" href="#!">Link 1</a></li>
-          <li><a class="white-text" href="#!">Link 2</a></li>
-          <li><a class="white-text" href="#!">Link 3</a></li>
-          <li><a class="white-text" href="#!">Link 4</a></li>
-        </ul>
+<!--        <h5 class="white-text">Settings</h5>-->
+<!--        <ul>-->
+<!--          <li><a class="white-text" href="#!">Link</a></li>-->
+<!--        </ul>-->
       </div>
       <div class="col l3 s12">
-        <h5 class="white-text">Connect</h5>
-        <ul>
-          <li><a class="white-text" href="#!">Link 1</a></li>
-          <li><a class="white-text" href="#!">Link 2</a></li>
-          <li><a class="white-text" href="#!">Link 3</a></li>
-          <li><a class="white-text" href="#!">Link 4</a></li>
+        <h5 class="white-text">Контакты:</h5>
+        <ul class="footer-contact">
+          <li>
+            <a class="footer-contact__link" href="mailto:alexzagatskiy@gmail.com">
+              <svg width="30px" height="30px">
+                <use xlink:href="#icon_mail"/>
+              </svg>
+              <span>alexzagatskiy@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer-contact__link" href="tel:+380973384288">
+              <svg width="25px" height="25">
+                <use xlink:href="#icon_phone"/>
+              </svg>
+              <span>097-338-42-88</span>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </div>
   <div class="footer-copyright">
     <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made by <a class="brown-text text-lighten-3" href="https://sprinter-kharkiv.github.io/">AlexZagatskiy</a>
     </div>
   </div>
 </footer>

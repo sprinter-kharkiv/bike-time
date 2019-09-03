@@ -38,7 +38,7 @@ const path = {
         js: 'docs/js/',
         fonts: 'docs/fonts/',
         svgSprite: {
-            folder: 'docs/img/svg-sprites/',
+            folder: 'src/img/',
             file: '_svg-sprite.html'
         }
     },
@@ -48,7 +48,7 @@ const path = {
         img: 'src/img/**/*',
         js: 'src/js/**/*.js',
         fonts: 'src/fonts/**/*.{woff,woff2}',
-        svgSprite: 'src/img/svg-sprite/*.svg'
+        svgSprite: 'src/svg-sprites/*.svg'
     },
     watch: {
         style: 'src/scss/**/*.scss',
@@ -108,7 +108,7 @@ gulp.task('html', function () {
 // Images
 gulp.task('img',function () {
   return gulp.src(path.src.img)
-        .pipe(imagemin())
+        // .pipe(imagemin())
         .pipe(gulp.dest(path.build.img))
         .pipe(browserSync.reload({
           stream: true
