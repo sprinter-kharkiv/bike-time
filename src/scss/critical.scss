@@ -114,6 +114,10 @@ footer.page-footer {
 }
 
 .footer-contact {
+  display: flex;
+  li {
+    margin-right: 2em;
+  }
   &__link {
     display: flex;
     align-items: center;
