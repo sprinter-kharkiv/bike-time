@@ -39,8 +39,9 @@ body {
   margin-right: 2em;
 }
 
+.sidenav,
 .main-nav {
-  &__link {
+  .nav-link {
     color: #666;
     display: flex;
     align-items: center;
@@ -58,6 +59,10 @@ body {
 
 p {
   line-height: 2rem;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, .65);
 }
 
 .mb-2 {
@@ -97,11 +102,12 @@ p {
 
 .icon-block {
   padding: 0 15px;
+
+  svg {
+    min-height: 80px;
+  }
 }
 
-.icon-block .material-icons {
-  font-size: inherit;
-}
 
 footer.page-footer {
   margin: 0;
