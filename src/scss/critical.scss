@@ -57,6 +57,16 @@ body {
   }
 }
 
+.main-title {
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, .65);
+  font-weight: 700;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 45px;
+  }
+}
+
 p {
   line-height: 2rem;
 }
@@ -129,5 +139,9 @@ footer.page-footer {
       min-width: 30px;
       margin-right: 1em;
     }
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: block;
   }
 }
